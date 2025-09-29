@@ -534,6 +534,15 @@ Traceback (most recent call last):
   File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 98, in _handle_response
     raise BinanceAPIException(response, response.status_code, response.text)
 binance.exceptions.BinanceAPIException: APIError(code=-1000): An unknown error occurred while processing the request.
+2025-09-29 16:05:12 | INFO | src.core.binance_client | Applied time offset -4670ms
+2025-09-29 16:05:12 | INFO | src.core.binance_client | Server time synchronized successfully.
+2025-09-29 16:05:12 | INFO | src.core.bot | Retrieved account balances snapshot.
+2025-09-29 16:05:12 | INFO | src.core.bot | Account balances: {'USDT': '10000.00000000', 'BTC': '0.25000000'}
+2025-09-29 16:05:18 | INFO | src.orders.limit_orders | Submitting limit order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'LIMIT', 'quantity': 0.01, 'price': 62000.0, 'timeInForce': 'GTC'}
+2025-09-29 16:05:18 | INFO | src.orders.limit_orders | Limit order accepted: orderId=3123456789123, clientOrderId='demo-001'
+2025-09-29 16:05:25 | INFO | src.orders.market_orders | Submitting market order: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'MARKET', 'quantity': 0.01}
+2025-09-29 16:05:26 | INFO | src.orders.market_orders | Market order filled: orderId=4123456789123, executedQty='0.010', cummulativeQuoteQty='620.15'
+2025-09-29 16:05:30 | INFO | src.core.reports | Generated daily performance summary for BTCUSDT.
 2025-09-29 16:55:37 | INFO | src.core.binance_client | Applied time offset -4644ms
 2025-09-29 16:55:37 | INFO | src.core.binance_client | Using Binance Futures testnet endpoint at https://testnet.binancefuture.com/fapi
 2025-09-29 16:55:37 | INFO | src.core.bot | Loaded 593 available perpetual futures symbols.
@@ -547,3 +556,4 @@ binance.exceptions.BinanceAPIException: APIError(code=-1000): An unknown error o
 2025-09-29 17:05:11 | INFO | src.orders.market_orders | Market order executed successfully for BTCUSDT BUY qty=0.50. status=SUCCESS
 2025-09-29 17:05:12 | INFO | src.orders.limit_orders | Limit order executed successfully for ETHUSDT SELL qty=1.00 price=1800.00. status=SUCCESS
 2025-09-29 17:05:13 | INFO | src.advanced.twap | Completed TWAP execution for BTCUSDT BUY totalQty=5.00 slices=5 interval=10s executedQty=5.00. status=SUCCESS
+
