@@ -10,6 +10,7 @@ A command-line trading assistant for the Binance USDT-M Futures **testnet**. The
 
 <img width="1082" height="841" alt="image-1759145222448" src="https://github.com/user-attachments/assets/aec23b93-3882-481c-af68-f7c3d096ce75" />
 
+<img width="1273" height="272" alt="image" src="https://github.com/user-attachments/assets/b8bc680e-58dc-4936-91e2-e5de337d24ec" />
 
 ## Features
 
