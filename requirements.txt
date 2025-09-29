@@ -1,0 +1,7 @@
+python-binance>=1.0.19
+pandas>=2.2.0
+streamlit>=1.38.0
+python-dotenv>=1.0.1
+pytest>=8.2.0
+pillow>=10.4.0
+pypdf>=4.2.0
