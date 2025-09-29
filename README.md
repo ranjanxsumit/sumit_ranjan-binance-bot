@@ -4,6 +4,13 @@ A command-line trading assistant for the Binance USDT-M Futures **testnet**. The
 
 > **Warning**: This project is configured for the Binance Futures **testnet**. Never plug real credentials into a test build, and always review orders before running them on mainnet.
 
+<img width="1918" height="924" alt="image-1759145178617" src="https://github.com/user-attachments/assets/3475cf75-5b44-4609-9e0c-08e2c747d96f" />
+
+<img width="1049" height="735" alt="image-1759145199532" src="https://github.com/user-attachments/assets/c449888a-9b42-4b87-8e17-13397acef31f" />
+
+<img width="1082" height="841" alt="image-1759145222448" src="https://github.com/user-attachments/assets/aec23b93-3882-481c-af68-f7c3d096ce75" />
+
+
 ## Features
 
 - ✅ Market and limit orders with input validation.
@@ -173,3 +180,6 @@ pytest
 - Enrich CLI with colorized output (e.g., `rich` library) and interactive prompts.
 
 Happy testing and safe trading!
+
+Credit:
+SUMIT RANJAN
