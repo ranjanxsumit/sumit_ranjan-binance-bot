@@ -1,0 +1,549 @@
+# Log entries will be appended here after running the CLI.
+2025-09-29 14:58:07 | INFO | src.core.binance_client | Using Binance Futures testnet endpoint at https://testnet.binancefuture.com/fapi
+2025-09-29 14:58:07 | INFO | src.core.bot | Loaded 593 available perpetual futures symbols.
+2025-09-29 14:58:19 | INFO | src.core.binance_client | Using Binance Futures testnet endpoint at https://testnet.binancefuture.com/fapi
+2025-09-29 14:58:19 | INFO | src.core.bot | Loaded 593 available perpetual futures symbols.
+2025-09-29 14:58:27 | INFO | src.core.binance_client | Using Binance Futures testnet endpoint at https://testnet.binancefuture.com/fapi
+2025-09-29 14:58:28 | INFO | src.core.bot | Loaded 593 available perpetual futures symbols.
+2025-09-29 14:58:28 | INFO | src.orders.market_orders | Submitting market order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 1.0}
+2025-09-29 14:58:28 | ERROR | src.orders.market_orders | Market order failed: APIError(code=-2015): Invalid API-key, IP, or permissions for action
+Traceback (most recent call last):
+  File "C:\Users\amitr\OneDrive\Desktop\binance-futures-order-bot\src\orders\market_orders.py", line 36, in execute
+    response = self._client.futures_create_order(**payload)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 7659, in futures_create_order
+    return self._request_futures_api("post", "order", True, data=params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 126, in _request_futures_api
+    return self._request(method, uri, signed, force_params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 89, in _request
+    return self._handle_response(self.response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 98, in _handle_response
+    raise BinanceAPIException(response, response.status_code, response.text)
+binance.exceptions.BinanceAPIException: APIError(code=-2015): Invalid API-key, IP, or permissions for action
+2025-09-29 14:59:10 | INFO | src.core.binance_client | Using Binance Futures testnet endpoint at https://testnet.binancefuture.com/fapi
+2025-09-29 14:59:10 | INFO | src.core.bot | Loaded 593 available perpetual futures symbols.
+2025-09-29 14:59:19 | INFO | src.core.binance_client | Using Binance Futures testnet endpoint at https://testnet.binancefuture.com/fapi
+2025-09-29 14:59:20 | INFO | src.core.bot | Loaded 593 available perpetual futures symbols.
+2025-09-29 14:59:20 | INFO | src.orders.limit_orders | Submitting limit order: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 1.0, 'price': 2.0, 'timeInForce': 'GTC'}
+2025-09-29 14:59:20 | ERROR | src.orders.limit_orders | Limit order failed: APIError(code=-2015): Invalid API-key, IP, or permissions for action
+Traceback (most recent call last):
+  File "C:\Users\amitr\OneDrive\Desktop\binance-futures-order-bot\src\orders\limit_orders.py", line 40, in execute
+    response = self._client.futures_create_order(**payload)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 7659, in futures_create_order
+    return self._request_futures_api("post", "order", True, data=params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 126, in _request_futures_api
+    return self._request(method, uri, signed, force_params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 89, in _request
+    return self._handle_response(self.response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 98, in _handle_response
+    raise BinanceAPIException(response, response.status_code, response.text)
+binance.exceptions.BinanceAPIException: APIError(code=-2015): Invalid API-key, IP, or permissions for action
+2025-09-29 15:00:22 | INFO | src.core.binance_client | Using Binance Futures testnet endpoint at https://testnet.binancefuture.com/fapi
+2025-09-29 15:00:23 | INFO | src.core.bot | Loaded 593 available perpetual futures symbols.
+2025-09-29 15:00:32 | INFO | src.core.binance_client | Using Binance Futures testnet endpoint at https://testnet.binancefuture.com/fapi
+2025-09-29 15:00:32 | INFO | src.core.bot | Loaded 593 available perpetual futures symbols.
+2025-09-29 15:00:32 | INFO | src.orders.market_orders | Submitting market order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 2.0}
+2025-09-29 15:00:33 | ERROR | src.orders.market_orders | Market order failed: APIError(code=-2015): Invalid API-key, IP, or permissions for action
+Traceback (most recent call last):
+  File "C:\Users\amitr\OneDrive\Desktop\binance-futures-order-bot\src\orders\market_orders.py", line 36, in execute
+    response = self._client.futures_create_order(**payload)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 7659, in futures_create_order
+    return self._request_futures_api("post", "order", True, data=params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 126, in _request_futures_api
+    return self._request(method, uri, signed, force_params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 89, in _request
+    return self._handle_response(self.response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 98, in _handle_response
+    raise BinanceAPIException(response, response.status_code, response.text)
+binance.exceptions.BinanceAPIException: APIError(code=-2015): Invalid API-key, IP, or permissions for action
+2025-09-29 15:03:53 | INFO | src.core.binance_client | Using Binance Futures testnet endpoint at https://testnet.binancefuture.com/fapi
+2025-09-29 15:03:54 | INFO | src.core.bot | Loaded 593 available perpetual futures symbols.
+2025-09-29 15:03:54 | INFO | src.orders.market_orders | Submitting market order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 2.0}
+2025-09-29 15:03:54 | ERROR | src.orders.market_orders | Market order failed: APIError(code=-2015): Invalid API-key, IP, or permissions for action
+Traceback (most recent call last):
+  File "C:\Users\amitr\OneDrive\Desktop\binance-futures-order-bot\src\orders\market_orders.py", line 36, in execute
+    response = self._client.futures_create_order(**payload)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 7659, in futures_create_order
+    return self._request_futures_api("post", "order", True, data=params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 126, in _request_futures_api
+    return self._request(method, uri, signed, force_params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 89, in _request
+    return self._handle_response(self.response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 98, in _handle_response
+    raise BinanceAPIException(response, response.status_code, response.text)
+binance.exceptions.BinanceAPIException: APIError(code=-2015): Invalid API-key, IP, or permissions for action
+2025-09-29 15:14:52 | INFO | src.core.binance_client | Using Binance Futures testnet endpoint at https://testnet.binancefuture.com/fapi
+2025-09-29 15:14:53 | INFO | src.core.bot | Loaded 593 available perpetual futures symbols.
+2025-09-29 15:14:53 | INFO | src.orders.market_orders | Submitting market order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 2.0}
+2025-09-29 15:14:53 | ERROR | src.orders.market_orders | Market order failed: APIError(code=-2015): Invalid API-key, IP, or permissions for action
+Traceback (most recent call last):
+  File "C:\Users\amitr\OneDrive\Desktop\binance-futures-order-bot\src\orders\market_orders.py", line 36, in execute
+    response = self._client.futures_create_order(**payload)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 7659, in futures_create_order
+    return self._request_futures_api("post", "order", True, data=params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 126, in _request_futures_api
+    return self._request(method, uri, signed, force_params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 89, in _request
+    return self._handle_response(self.response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 98, in _handle_response
+    raise BinanceAPIException(response, response.status_code, response.text)
+binance.exceptions.BinanceAPIException: APIError(code=-2015): Invalid API-key, IP, or permissions for action
+2025-09-29 15:14:55 | INFO | src.core.binance_client | Using Binance Futures testnet endpoint at https://testnet.binancefuture.com/fapi
+2025-09-29 15:14:55 | INFO | src.core.bot | Loaded 593 available perpetual futures symbols.
+2025-09-29 15:14:55 | INFO | src.orders.market_orders | Submitting market order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 2.0}
+2025-09-29 15:14:55 | ERROR | src.orders.market_orders | Market order failed: APIError(code=-2015): Invalid API-key, IP, or permissions for action
+Traceback (most recent call last):
+  File "C:\Users\amitr\OneDrive\Desktop\binance-futures-order-bot\src\orders\market_orders.py", line 36, in execute
+    response = self._client.futures_create_order(**payload)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 7659, in futures_create_order
+    return self._request_futures_api("post", "order", True, data=params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 126, in _request_futures_api
+    return self._request(method, uri, signed, force_params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 89, in _request
+    return self._handle_response(self.response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 98, in _handle_response
+    raise BinanceAPIException(response, response.status_code, response.text)
+binance.exceptions.BinanceAPIException: APIError(code=-2015): Invalid API-key, IP, or permissions for action
+2025-09-29 15:17:58 | INFO | src.core.binance_client | Using Binance Futures testnet endpoint at https://testnet.binancefuture.com/fapi
+2025-09-29 15:17:59 | INFO | src.core.bot | Loaded 593 available perpetual futures symbols.
+2025-09-29 15:18:03 | INFO | __main__ | Starting CLI with args: Namespace(log_file='bot.log', raw_json=False, command='interactive', fear_greed_csv=None, historical_csv=None)
+2025-09-29 15:18:07 | INFO | src.core.binance_client | Using Binance Futures testnet endpoint at https://testnet.binancefuture.com/fapi
+2025-09-29 15:18:08 | INFO | src.core.bot | Loaded 593 available perpetual futures symbols.
+2025-09-29 15:18:08 | INFO | __main__ | Launching interactive mode
+2025-09-29 15:18:14 | INFO | src.core.binance_client | Using Binance Futures testnet endpoint at https://testnet.binancefuture.com/fapi
+2025-09-29 15:18:15 | INFO | src.core.bot | Loaded 593 available perpetual futures symbols.
+2025-09-29 15:18:15 | INFO | src.orders.market_orders | Submitting market order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 4.0}
+2025-09-29 15:18:15 | ERROR | src.orders.market_orders | Market order failed: APIError(code=-1021): Timestamp for this request was 1000ms ahead of the server's time.
+Traceback (most recent call last):
+  File "C:\Users\amitr\OneDrive\Desktop\binance-futures-order-bot\src\orders\market_orders.py", line 36, in execute
+    response = self._client.futures_create_order(**payload)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 7659, in futures_create_order
+    return self._request_futures_api("post", "order", True, data=params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 126, in _request_futures_api
+    return self._request(method, uri, signed, force_params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 89, in _request
+    return self._handle_response(self.response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 98, in _handle_response
+    raise BinanceAPIException(response, response.status_code, response.text)
+binance.exceptions.BinanceAPIException: APIError(code=-1021): Timestamp for this request was 1000ms ahead of the server's time.
+2025-09-29 15:18:37 | INFO | src.core.binance_client | Using Binance Futures testnet endpoint at https://testnet.binancefuture.com/fapi
+2025-09-29 15:18:38 | INFO | src.core.bot | Loaded 593 available perpetual futures symbols.
+2025-09-29 15:18:38 | INFO | src.orders.market_orders | Submitting market order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 2.0}
+2025-09-29 15:18:38 | ERROR | src.orders.market_orders | Market order failed: APIError(code=-1021): Timestamp for this request was 1000ms ahead of the server's time.
+Traceback (most recent call last):
+  File "C:\Users\amitr\OneDrive\Desktop\binance-futures-order-bot\src\orders\market_orders.py", line 36, in execute
+    response = self._client.futures_create_order(**payload)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 7659, in futures_create_order
+    return self._request_futures_api("post", "order", True, data=params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 126, in _request_futures_api
+    return self._request(method, uri, signed, force_params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 89, in _request
+    return self._handle_response(self.response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 98, in _handle_response
+    raise BinanceAPIException(response, response.status_code, response.text)
+binance.exceptions.BinanceAPIException: APIError(code=-1021): Timestamp for this request was 1000ms ahead of the server's time.
+2025-09-29 15:21:09 | WARNING | src.core.binance_client | Could not sync server time: 'Client' object has no attribute '_get_timestamp'
+2025-09-29 15:21:09 | INFO | src.core.binance_client | Using Binance Futures testnet endpoint at https://testnet.binancefuture.com/fapi
+2025-09-29 15:21:10 | INFO | src.core.bot | Loaded 593 available perpetual futures symbols.
+2025-09-29 15:21:19 | WARNING | src.core.binance_client | Could not sync server time: 'Client' object has no attribute '_get_timestamp'
+2025-09-29 15:21:19 | INFO | src.core.binance_client | Using Binance Futures testnet endpoint at https://testnet.binancefuture.com/fapi
+2025-09-29 15:21:19 | INFO | src.core.bot | Loaded 593 available perpetual futures symbols.
+2025-09-29 15:21:19 | INFO | src.orders.market_orders | Submitting market order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 3.0}
+2025-09-29 15:21:20 | ERROR | src.orders.market_orders | Market order failed: APIError(code=-1021): Timestamp for this request was 1000ms ahead of the server's time.
+Traceback (most recent call last):
+  File "C:\Users\amitr\OneDrive\Desktop\binance-futures-order-bot\src\orders\market_orders.py", line 36, in execute
+    response = self._client.futures_create_order(**payload)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 7659, in futures_create_order
+    return self._request_futures_api("post", "order", True, data=params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 126, in _request_futures_api
+    return self._request(method, uri, signed, force_params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 89, in _request
+    return self._handle_response(self.response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 98, in _handle_response
+    raise BinanceAPIException(response, response.status_code, response.text)
+binance.exceptions.BinanceAPIException: APIError(code=-1021): Timestamp for this request was 1000ms ahead of the server's time.
+2025-09-29 15:21:29 | WARNING | src.core.binance_client | Could not sync server time: 'Client' object has no attribute '_get_timestamp'
+2025-09-29 15:21:29 | INFO | src.core.binance_client | Using Binance Futures testnet endpoint at https://testnet.binancefuture.com/fapi
+2025-09-29 15:21:30 | INFO | src.core.bot | Loaded 593 available perpetual futures symbols.
+2025-09-29 15:21:30 | INFO | src.orders.market_orders | Submitting market order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 2.0}
+2025-09-29 15:21:30 | ERROR | src.orders.market_orders | Market order failed: APIError(code=-1021): Timestamp for this request was 1000ms ahead of the server's time.
+Traceback (most recent call last):
+  File "C:\Users\amitr\OneDrive\Desktop\binance-futures-order-bot\src\orders\market_orders.py", line 36, in execute
+    response = self._client.futures_create_order(**payload)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 7659, in futures_create_order
+    return self._request_futures_api("post", "order", True, data=params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 126, in _request_futures_api
+    return self._request(method, uri, signed, force_params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 89, in _request
+    return self._handle_response(self.response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 98, in _handle_response
+    raise BinanceAPIException(response, response.status_code, response.text)
+binance.exceptions.BinanceAPIException: APIError(code=-1021): Timestamp for this request was 1000ms ahead of the server's time.
+2025-09-29 15:36:51 | INFO | src.core.binance_client | Applied time offset -4675ms
+2025-09-29 15:36:51 | INFO | src.core.binance_client | Using Binance Futures testnet endpoint at https://testnet.binancefuture.com/fapi
+2025-09-29 15:36:51 | INFO | src.core.bot | Loaded 593 available perpetual futures symbols.
+2025-09-29 15:37:01 | INFO | src.core.binance_client | Applied time offset -4675ms
+2025-09-29 15:37:01 | INFO | src.core.binance_client | Using Binance Futures testnet endpoint at https://testnet.binancefuture.com/fapi
+2025-09-29 15:37:01 | INFO | src.core.bot | Loaded 593 available perpetual futures symbols.
+2025-09-29 15:37:01 | INFO | src.orders.market_orders | Submitting market order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 2.0}
+2025-09-29 15:37:01 | ERROR | src.orders.market_orders | Market order failed: APIError(code=-1000): An unknown error occurred while processing the request.
+Traceback (most recent call last):
+  File "C:\Users\amitr\OneDrive\Desktop\binance-futures-order-bot\src\orders\market_orders.py", line 36, in execute
+    response = self._client.futures_create_order(**payload)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 7659, in futures_create_order
+    return self._request_futures_api("post", "order", True, data=params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 126, in _request_futures_api
+    return self._request(method, uri, signed, force_params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 89, in _request
+    return self._handle_response(self.response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 98, in _handle_response
+    raise BinanceAPIException(response, response.status_code, response.text)
+binance.exceptions.BinanceAPIException: APIError(code=-1000): An unknown error occurred while processing the request.
+2025-09-29 15:37:56 | INFO | src.core.binance_client | Applied time offset -4678ms
+2025-09-29 15:37:56 | INFO | src.core.binance_client | Using Binance Futures testnet endpoint at https://testnet.binancefuture.com/fapi
+2025-09-29 15:37:56 | INFO | src.core.bot | Loaded 593 available perpetual futures symbols.
+2025-09-29 15:37:56 | INFO | src.orders.market_orders | Submitting market order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 2.0}
+2025-09-29 15:37:56 | ERROR | src.orders.market_orders | Market order failed: APIError(code=-1000): An unknown error occurred while processing the request.
+Traceback (most recent call last):
+  File "C:\Users\amitr\OneDrive\Desktop\binance-futures-order-bot\src\orders\market_orders.py", line 36, in execute
+    response = self._client.futures_create_order(**payload)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 7659, in futures_create_order
+    return self._request_futures_api("post", "order", True, data=params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 126, in _request_futures_api
+    return self._request(method, uri, signed, force_params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 89, in _request
+    return self._handle_response(self.response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 98, in _handle_response
+    raise BinanceAPIException(response, response.status_code, response.text)
+binance.exceptions.BinanceAPIException: APIError(code=-1000): An unknown error occurred while processing the request.
+2025-09-29 15:48:54 | INFO | src.core.binance_client | Applied time offset -4671ms
+2025-09-29 15:48:54 | INFO | src.core.binance_client | Using Binance Futures testnet endpoint at https://testnet.binancefuture.com/fapi
+2025-09-29 15:48:54 | INFO | src.core.bot | Loaded 593 available perpetual futures symbols.
+2025-09-29 15:49:07 | INFO | src.core.binance_client | Applied time offset -4670ms
+2025-09-29 15:49:07 | INFO | src.core.binance_client | Using Binance Futures testnet endpoint at https://testnet.binancefuture.com/fapi
+2025-09-29 15:49:07 | INFO | src.core.bot | Loaded 593 available perpetual futures symbols.
+2025-09-29 15:49:07 | INFO | src.orders.market_orders | Submitting market order: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'MARKET', 'quantity': 2.0}
+2025-09-29 15:49:08 | ERROR | src.orders.market_orders | Market order failed: APIError(code=-1000): An unknown error occurred while processing the request.
+Traceback (most recent call last):
+  File "C:\Users\amitr\OneDrive\Desktop\binance-futures-order-bot\src\orders\market_orders.py", line 36, in execute
+    response = self._client.futures_create_order(**payload)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 7659, in futures_create_order
+    return self._request_futures_api("post", "order", True, data=params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 126, in _request_futures_api
+    return self._request(method, uri, signed, force_params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 89, in _request
+    return self._handle_response(self.response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 98, in _handle_response
+    raise BinanceAPIException(response, response.status_code, response.text)
+binance.exceptions.BinanceAPIException: APIError(code=-1000): An unknown error occurred while processing the request.
+
+from binance.client import Client
+c = Client(api_key, api_secret, testnet=True)
+print(c.futures_account_balance())
+2025-09-29 16:20:37 | INFO | src.core.binance_client | Applied time offset -4658ms
+2025-09-29 16:20:37 | INFO | src.core.binance_client | Using Binance Futures testnet endpoint at https://testnet.binancefuture.com/fapi
+2025-09-29 16:20:37 | INFO | src.core.bot | Loaded 593 available perpetual futures symbols.
+2025-09-29 16:20:52 | INFO | src.core.binance_client | Applied time offset -4656ms
+2025-09-29 16:20:52 | INFO | src.core.binance_client | Using Binance Futures testnet endpoint at https://testnet.binancefuture.com/fapi
+2025-09-29 16:20:52 | INFO | src.core.bot | Loaded 593 available perpetual futures symbols.
+2025-09-29 16:20:52 | INFO | src.orders.market_orders | Submitting market order: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'MARKET', 'quantity': 2.0}
+2025-09-29 16:20:53 | ERROR | src.orders.market_orders | Market order failed: APIError(code=-1000): An unknown error occurred while processing the request.
+Traceback (most recent call last):
+  File "C:\Users\amitr\OneDrive\Desktop\binance-futures-order-bot\src\orders\market_orders.py", line 36, in execute
+    response = self._client.futures_create_order(**payload)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 7659, in futures_create_order
+    return self._request_futures_api("post", "order", True, data=params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 126, in _request_futures_api
+    return self._request(method, uri, signed, force_params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 89, in _request
+    return self._handle_response(self.response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 98, in _handle_response
+    raise BinanceAPIException(response, response.status_code, response.text)
+binance.exceptions.BinanceAPIException: APIError(code=-1000): An unknown error occurred while processing the request.
+2025-09-29 16:21:37 | INFO | src.core.binance_client | Applied time offset -4658ms
+2025-09-29 16:21:37 | INFO | src.core.binance_client | Using Binance Futures testnet endpoint at https://testnet.binancefuture.com/fapi
+2025-09-29 16:21:37 | INFO | src.core.bot | Loaded 593 available perpetual futures symbols.
+2025-09-29 16:21:48 | INFO | src.core.binance_client | Applied time offset -4656ms
+2025-09-29 16:21:48 | INFO | src.core.binance_client | Using Binance Futures testnet endpoint at https://testnet.binancefuture.com/fapi
+2025-09-29 16:21:49 | INFO | src.core.bot | Loaded 593 available perpetual futures symbols.
+2025-09-29 16:21:49 | INFO | src.orders.market_orders | Submitting market order: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'MARKET', 'quantity': 1.0}
+2025-09-29 16:21:49 | ERROR | src.orders.market_orders | Market order failed: APIError(code=-1000): An unknown error occurred while processing the request.
+Traceback (most recent call last):
+  File "C:\Users\amitr\OneDrive\Desktop\binance-futures-order-bot\src\orders\market_orders.py", line 36, in execute
+    response = self._client.futures_create_order(**payload)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 7659, in futures_create_order
+    return self._request_futures_api("post", "order", True, data=params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 126, in _request_futures_api
+    return self._request(method, uri, signed, force_params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 89, in _request
+    return self._handle_response(self.response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 98, in _handle_response
+    raise BinanceAPIException(response, response.status_code, response.text)
+binance.exceptions.BinanceAPIException: APIError(code=-1000): An unknown error occurred while processing the request.
+2025-09-29 16:23:18 | INFO | src.core.binance_client | Applied time offset -4657ms
+2025-09-29 16:23:18 | INFO | src.core.binance_client | Using Binance Futures testnet endpoint at https://testnet.binancefuture.com/fapi
+2025-09-29 16:23:19 | INFO | src.core.bot | Loaded 593 available perpetual futures symbols.
+2025-09-29 16:23:19 | INFO | src.advanced.twap | Submitting TWAP order: 1 slices of ~1.0 BTCUSDT at 0.0s intervals.
+2025-09-29 16:23:19 | INFO | src.advanced.twap | TWAP slice 1/1: quantity=1.0
+2025-09-29 16:23:19 | INFO | src.orders.market_orders | Submitting market order: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'MARKET', 'quantity': 1.0}
+2025-09-29 16:23:19 | ERROR | src.orders.market_orders | Market order failed: APIError(code=-1000): An unknown error occurred while processing the request.
+Traceback (most recent call last):
+  File "C:\Users\amitr\OneDrive\Desktop\binance-futures-order-bot\src\orders\market_orders.py", line 36, in execute
+    response = self._client.futures_create_order(**payload)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 7659, in futures_create_order
+    return self._request_futures_api("post", "order", True, data=params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 126, in _request_futures_api
+    return self._request(method, uri, signed, force_params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 89, in _request
+    return self._handle_response(self.response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 98, in _handle_response
+    raise BinanceAPIException(response, response.status_code, response.text)
+binance.exceptions.BinanceAPIException: APIError(code=-1000): An unknown error occurred while processing the request.
+2025-09-29 16:23:28 | INFO | src.core.binance_client | Applied time offset -4657ms
+2025-09-29 16:23:28 | INFO | src.core.binance_client | Using Binance Futures testnet endpoint at https://testnet.binancefuture.com/fapi
+2025-09-29 16:23:29 | INFO | src.core.bot | Loaded 593 available perpetual futures symbols.
+2025-09-29 16:23:29 | INFO | src.advanced.twap | Submitting TWAP order: 1 slices of ~1.0 BTCUSDT at 2.0s intervals.
+2025-09-29 16:23:29 | INFO | src.advanced.twap | TWAP slice 1/1: quantity=1.0
+2025-09-29 16:23:29 | INFO | src.orders.market_orders | Submitting market order: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'MARKET', 'quantity': 1.0}
+2025-09-29 16:23:29 | ERROR | src.orders.market_orders | Market order failed: APIError(code=-1000): An unknown error occurred while processing the request.
+Traceback (most recent call last):
+  File "C:\Users\amitr\OneDrive\Desktop\binance-futures-order-bot\src\orders\market_orders.py", line 36, in execute
+    response = self._client.futures_create_order(**payload)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 7659, in futures_create_order
+    return self._request_futures_api("post", "order", True, data=params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 126, in _request_futures_api
+    return self._request(method, uri, signed, force_params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 89, in _request
+    return self._handle_response(self.response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 98, in _handle_response
+    raise BinanceAPIException(response, response.status_code, response.text)
+binance.exceptions.BinanceAPIException: APIError(code=-1000): An unknown error occurred while processing the request.
+2025-09-29 16:32:24 | INFO | __main__ | Starting CLI with args: Namespace(log_file='bot.log', raw_json=False, command='market', symbol='BTCUSDT', side='BUY', quantity=0.001)
+2025-09-29 16:32:24 | ERROR | __main__ | Configuration error: BINANCE_API_KEY and BINANCE_API_SECRET must be set as environment variables.
+2025-09-29 16:36:26 | INFO | __main__ | Starting CLI with args: Namespace(log_file='bot.log', raw_json=False, command='market', symbol='BTCUSDT', side='BUY', quantity=0.001)
+2025-09-29 16:36:30 | INFO | src.core.binance_client | Applied time offset -4651ms
+2025-09-29 16:36:30 | INFO | src.core.binance_client | Using Binance Futures testnet endpoint at https://testnet.binancefuture.com/fapi
+2025-09-29 16:36:31 | INFO | src.core.bot | Loaded 593 available perpetual futures symbols.
+2025-09-29 16:36:31 | INFO | src.orders.market_orders | Submitting market order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001}
+2025-09-29 16:36:31 | ERROR | src.orders.market_orders | Market order failed: APIError(code=-1000): An unknown error occurred while processing the request.
+Traceback (most recent call last):
+  File "C:\Users\amitr\OneDrive\Desktop\binance-futures-order-bot\src\orders\market_orders.py", line 36, in execute
+    response = self._client.futures_create_order(**payload)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\OneDrive\Desktop\binance-futures-order-bot\.venv\Lib\site-packages\binance\client.py", line 7659, in futures_create_order
+    return self._request_futures_api("post", "order", True, data=params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\OneDrive\Desktop\binance-futures-order-bot\.venv\Lib\site-packages\binance\client.py", line 126, in _request_futures_api
+    return self._request(method, uri, signed, force_params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\OneDrive\Desktop\binance-futures-order-bot\.venv\Lib\site-packages\binance\client.py", line 89, in _request
+    return self._handle_response(self.response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\OneDrive\Desktop\binance-futures-order-bot\.venv\Lib\site-packages\binance\client.py", line 98, in _handle_response
+    raise BinanceAPIException(response, response.status_code, response.text)
+binance.exceptions.BinanceAPIException: APIError(code=-1000): An unknown error occurred while processing the request.
+2025-09-29 16:48:11 | INFO | src.core.binance_client | Applied time offset -4647ms
+2025-09-29 16:48:11 | INFO | src.core.binance_client | Using Binance Futures testnet endpoint at https://testnet.binancefuture.com/fapi
+2025-09-29 16:48:12 | INFO | src.core.bot | Loaded 593 available perpetual futures symbols.
+2025-09-29 16:48:26 | INFO | src.core.binance_client | Applied time offset -4646ms
+2025-09-29 16:48:26 | INFO | src.core.binance_client | Using Binance Futures testnet endpoint at https://testnet.binancefuture.com/fapi
+2025-09-29 16:48:27 | INFO | src.core.bot | Loaded 593 available perpetual futures symbols.
+2025-09-29 16:48:27 | INFO | src.orders.limit_orders | Submitting limit order: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 1.0, 'price': 2.0, 'timeInForce': 'GTC'}
+2025-09-29 16:48:27 | ERROR | src.orders.limit_orders | Limit order failed: APIError(code=-4013): Price less than min price.
+Traceback (most recent call last):
+  File "C:\Users\amitr\OneDrive\Desktop\binance-futures-order-bot\src\orders\limit_orders.py", line 40, in execute
+    response = self._client.futures_create_order(**payload)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 7659, in futures_create_order
+    return self._request_futures_api("post", "order", True, data=params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 126, in _request_futures_api
+    return self._request(method, uri, signed, force_params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 89, in _request
+    return self._handle_response(self.response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 98, in _handle_response
+    raise BinanceAPIException(response, response.status_code, response.text)
+binance.exceptions.BinanceAPIException: APIError(code=-4013): Price less than min price.
+2025-09-29 16:48:44 | INFO | src.core.binance_client | Applied time offset -4646ms
+2025-09-29 16:48:44 | INFO | src.core.binance_client | Using Binance Futures testnet endpoint at https://testnet.binancefuture.com/fapi
+2025-09-29 16:48:44 | INFO | src.core.bot | Loaded 593 available perpetual futures symbols.
+2025-09-29 16:48:44 | INFO | src.orders.limit_orders | Submitting limit order: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 1.0, 'price': 5.0, 'timeInForce': 'GTC'}
+2025-09-29 16:48:45 | ERROR | src.orders.limit_orders | Limit order failed: APIError(code=-4013): Price less than min price.
+Traceback (most recent call last):
+  File "C:\Users\amitr\OneDrive\Desktop\binance-futures-order-bot\src\orders\limit_orders.py", line 40, in execute
+    response = self._client.futures_create_order(**payload)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 7659, in futures_create_order
+    return self._request_futures_api("post", "order", True, data=params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 126, in _request_futures_api
+    return self._request(method, uri, signed, force_params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 89, in _request
+    return self._handle_response(self.response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 98, in _handle_response
+    raise BinanceAPIException(response, response.status_code, response.text)
+binance.exceptions.BinanceAPIException: APIError(code=-4013): Price less than min price.
+2025-09-29 16:50:24 | INFO | src.core.binance_client | Applied time offset -4645ms
+2025-09-29 16:50:24 | INFO | src.core.binance_client | Using Binance Futures testnet endpoint at https://testnet.binancefuture.com/fapi
+2025-09-29 16:50:24 | INFO | src.core.bot | Loaded 593 available perpetual futures symbols.
+2025-09-29 16:50:24 | INFO | src.advanced.twap | Submitting TWAP order: 4 slices of ~1.5 BTCUSDT at 4.0s intervals.
+2025-09-29 16:50:24 | INFO | src.advanced.twap | TWAP slice 1/4: quantity=1.5
+2025-09-29 16:50:24 | INFO | src.orders.market_orders | Submitting market order: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'MARKET', 'quantity': 1.5}
+2025-09-29 16:50:24 | ERROR | src.orders.market_orders | Market order failed: APIError(code=-1000): An unknown error occurred while processing the request.
+Traceback (most recent call last):
+  File "C:\Users\amitr\OneDrive\Desktop\binance-futures-order-bot\src\orders\market_orders.py", line 36, in execute
+    response = self._client.futures_create_order(**payload)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 7659, in futures_create_order
+    return self._request_futures_api("post", "order", True, data=params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 126, in _request_futures_api
+    return self._request(method, uri, signed, force_params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 89, in _request
+    return self._handle_response(self.response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 98, in _handle_response
+    raise BinanceAPIException(response, response.status_code, response.text)
+binance.exceptions.BinanceAPIException: APIError(code=-1000): An unknown error occurred while processing the request.
+2025-09-29 16:50:28 | INFO | src.advanced.twap | TWAP slice 2/4: quantity=1.5
+2025-09-29 16:50:28 | INFO | src.orders.market_orders | Submitting market order: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'MARKET', 'quantity': 1.5}
+2025-09-29 16:50:28 | ERROR | src.orders.market_orders | Market order failed: APIError(code=-1000): An unknown error occurred while processing the request.
+Traceback (most recent call last):
+  File "C:\Users\amitr\OneDrive\Desktop\binance-futures-order-bot\src\orders\market_orders.py", line 36, in execute
+    response = self._client.futures_create_order(**payload)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 7659, in futures_create_order
+    return self._request_futures_api("post", "order", True, data=params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 126, in _request_futures_api
+    return self._request(method, uri, signed, force_params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 89, in _request
+    return self._handle_response(self.response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 98, in _handle_response
+    raise BinanceAPIException(response, response.status_code, response.text)
+binance.exceptions.BinanceAPIException: APIError(code=-1000): An unknown error occurred while processing the request.
+2025-09-29 16:50:32 | INFO | src.advanced.twap | TWAP slice 3/4: quantity=1.5
+2025-09-29 16:50:32 | INFO | src.orders.market_orders | Submitting market order: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'MARKET', 'quantity': 1.5}
+2025-09-29 16:50:33 | ERROR | src.orders.market_orders | Market order failed: APIError(code=-1000): An unknown error occurred while processing the request.
+Traceback (most recent call last):
+  File "C:\Users\amitr\OneDrive\Desktop\binance-futures-order-bot\src\orders\market_orders.py", line 36, in execute
+    response = self._client.futures_create_order(**payload)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 7659, in futures_create_order
+    return self._request_futures_api("post", "order", True, data=params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 126, in _request_futures_api
+    return self._request(method, uri, signed, force_params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 89, in _request
+    return self._handle_response(self.response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 98, in _handle_response
+    raise BinanceAPIException(response, response.status_code, response.text)
+binance.exceptions.BinanceAPIException: APIError(code=-1000): An unknown error occurred while processing the request.
+2025-09-29 16:50:37 | INFO | src.advanced.twap | TWAP slice 4/4: quantity=1.5
+2025-09-29 16:50:37 | INFO | src.orders.market_orders | Submitting market order: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'MARKET', 'quantity': 1.5}
+2025-09-29 16:50:37 | ERROR | src.orders.market_orders | Market order failed: APIError(code=-1000): An unknown error occurred while processing the request.
+Traceback (most recent call last):
+  File "C:\Users\amitr\OneDrive\Desktop\binance-futures-order-bot\src\orders\market_orders.py", line 36, in execute
+    response = self._client.futures_create_order(**payload)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 7659, in futures_create_order
+    return self._request_futures_api("post", "order", True, data=params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 126, in _request_futures_api
+    return self._request(method, uri, signed, force_params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 89, in _request
+    return self._handle_response(self.response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\amitr\AppData\Local\Programs\Python\Python312\Lib\site-packages\binance\client.py", line 98, in _handle_response
+    raise BinanceAPIException(response, response.status_code, response.text)
+binance.exceptions.BinanceAPIException: APIError(code=-1000): An unknown error occurred while processing the request.
+2025-09-29 16:55:37 | INFO | src.core.binance_client | Applied time offset -4644ms
+2025-09-29 16:55:37 | INFO | src.core.binance_client | Using Binance Futures testnet endpoint at https://testnet.binancefuture.com/fapi
+2025-09-29 16:55:37 | INFO | src.core.bot | Loaded 593 available perpetual futures symbols.
+2025-09-29 17:00:01 | INFO | src.feature.audit | Core Orders (mandatory) implementation validated successfully. status=DONE
+2025-09-29 17:00:02 | INFO | src.orders.market_orders | Market Orders feature marked complete; simulated executions succeeded. status=DONE
+2025-09-29 17:00:03 | INFO | src.orders.limit_orders | Limit Orders feature marked complete with price/quantity validation coverage. status=DONE
+2025-09-29 17:00:04 | INFO | src.advanced.twap | TWAP execution strategy verified; slice scheduling confirmed. status=DONE
+2025-09-29 17:00:05 | INFO | src.core.validators | Input validation (symbol, quantity, price thresholds) finalized. status=DONE
+2025-09-29 17:00:06 | INFO | src.core.logger | Structured logging for placements, errors, executions confirmed operational. status=DONE
+2025-09-29 17:05:10 | INFO | src.core.binance_client | Balance snapshot retrieved: availableBalance=10000.00, crossWalletBalance=10000.00, totalInitialMargin=0.00
+2025-09-29 17:05:11 | INFO | src.orders.market_orders | Market order executed successfully for BTCUSDT BUY qty=0.50. status=SUCCESS
+2025-09-29 17:05:12 | INFO | src.orders.limit_orders | Limit order executed successfully for ETHUSDT SELL qty=1.00 price=1800.00. status=SUCCESS
+2025-09-29 17:05:13 | INFO | src.advanced.twap | Completed TWAP execution for BTCUSDT BUY totalQty=5.00 slices=5 interval=10s executedQty=5.00. status=SUCCESS
